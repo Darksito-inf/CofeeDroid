@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "249202322109",
+    "project_id": "cofeedroid-223e1",
+    "storage_bucket": "cofeedroid-223e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249202322109:android:9ab41126a484ebef11a5d4",
+        "android_client_info": {
+          "package_name": "com.MHCofee.CofeeDroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSNh1tzUktj-HzYed99yGFhbM_6BWqqsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

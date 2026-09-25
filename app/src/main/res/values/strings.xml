@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">CofeeDroid</string>
+    <string name="welcome_message">Bienvenido a CofeeDroid</string>
+    <string name="user_hint">Usuario o correo</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="welcome_barista">¡Hola, Barista!</string>
+    <string name="management_title">Gestión de CofeeDroid en RAM</string>
+    <string name="inventory_title">Stock de Café e Inventario</string>
+    <string name="inventory_status">Grano Arabica: 12 kg (Stock Óptimo)\nGrano Robusta: 4 kg (Reponer pronto)</string>
+    <string name="btn_refill">Rellenar / Pedir Insumos</string>
+    <string name="special_orders_title">Órdenes Especiales</string>
+    <string name="special_orders_list">• Latte con leche de avena (Mesa 4)\n• Espresso doble sin azúcar (Para llevar)</string>
+    <string name="btn_new_order">Registrar Nueva Orden Especial</string>
+    <string name="promotions_title">Promociones Activas</string>
+    <string name="promotions_list">• 2x1 en Capuchinos los martes de 4:00 PM a 6:00 PM.\n• 15% de descuento en granos de origen colombiano.</string>
+    <string name="logo_desc">Logo personalizado</string>
+    <string name="inventory_updated">¡Inventario actualizado! Stock actual: %1$d kg</string>
+    <string name="simulating_order">Simulando registro de orden especial en RAM…</string>
+    <string name="error_empty_fields">Por favor, completa todos los campos</string>
+    <string name="error_invalid_user">Ingresa un correo o usuario válido</string>
+    <string name="error_password_short">Mínimo 6 caracteres</string>
+    <string name="login_success">¡Login exitoso!</string>
+    <string name="login_error">Usuario o contraseña incorrectos</string>
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+    <!-- Pantalla Inventario -->
+    <string name="title_inventario">Gestionar Inventario</string>
+    <string name="stock_arabica_format">Grano Arabica: %1$d kg</string>
+    <string name="stock_robusta_format">Grano Robusta: %1$d kg</string>
+    <string name="btn_rellenar_stock">Rellenar Stock (+5kg Arabica / +3kg Robusta)</string>
+
+    <!-- Pantalla Orden Especial -->
+    <string name="title_orden_especial">Registrar Orden Especial</string>
+    <string name="hint_nueva_orden">Ej: Mocha grande sin azúcar (Mesa 7)</string>
+    <string name="btn_guardar_orden">Guardar Orden</string>
+    <string name="order_saved">Orden guardada en RAM</string>
+    <string name="label_ordenes_actuales">Órdenes actuales</string>
+
+    <!-- Pantalla Promociones -->
+    <string name="title_promociones">Promociones Activas</string>
+
+    <!-- Sección Café en Home -->
+    <string name="title_coffee_info">Sobre Nuestro Café</string>
+    <string name="coffee_info_description">Trabajamos con granos 100% arábica de origen colombiano, tostados artesanalmente para resaltar notas achocolatadas y afrutadas en cada taza.</string>
+    <string name="title_coffee_menu">Menú de Cafés Disponibles</string>
+    <string name="coffee_menu_list">• Espresso — $1.500\n• Americano — $1.800\n• Latte — $2.200\n• Cappuccino — $2.200\n• Mocha — $2.500</string>
+    <!-- Formulario de Orden -->
+    <string name="label_cafe">Café</string>
+    <string name="hint_mesa">Número de mesa (o "Para llevar")</string>
+    <string name="order_item_format">%1$s (Mesa %2$s)</string>
+
+    <string-array name="coffee_menu_names">
+        <item>Espresso</item>
+        <item>Americano</item>
+        <item>Latte</item>
+        <item>Cappuccino</item>
+        <item>Mocha</item>
+    </string-array>
+    <!-- Tipo de pedido -->
+    <string name="label_tipo_pedido">Tipo de pedido</string>
+    <string name="radio_llevar">Para llevar</string>
+    <string name="radio_mesa">Servir en mesa</string>
+    <string name="order_item_llevar_format">%1$s (Para llevar)</string>
+    <!-- CRUD de Pedidos -->
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_actualizar_pedido">Actualizar Pedido</string>
+    <string name="btn_cancelar_edicion">Cancelar edición</string>
+    <string name="order_updated">Pedido actualizado</string>
+
+    <!-- Vista Usuario -->
+    <string name="welcome_client">¡Bienvenido!</string>
+    <string name="client_subtitle">Pide tu café favorito</string>
+    <string name="title_pedidos_section">Haz tu Pedido</string>
+    <string name="btn_realizar_pedido">Realizar Pedido</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+    <!-- CRUD de Inventario -->
+    <string name="label_nombre_insumo">Nombre del insumo</string>
+    <string name="hint_nombre_insumo">Ej: Leche entera</string>
+    <string name="label_cantidad_kg">Cantidad (kg)</string>
+    <string name="hint_cantidad_kg">Ej: 5</string>
+    <string name="btn_guardar_insumo">Guardar Insumo</string>
+    <string name="btn_actualizar_insumo">Actualizar Insumo</string>
+    <string name="insumo_saved">Insumo guardado</string>
+    <string name="insumo_updated">Insumo actualizado</string>
+    <string name="label_insumos_actuales">Insumos actuales</string>
+    <string name="error_invalid_number">Ingresa un número válido</string>
+</resources>

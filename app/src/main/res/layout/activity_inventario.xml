@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_coffee">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarInventario"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/coffee_primary"
+        app:title="@string/title_inventario"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back_arrow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nombre_insumo"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/inputNombreInsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nombre_insumo"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cantidad_kg"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/inputCantidadInsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cantidad_kg"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnGuardarInsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_guardar_insumo"
+                android:backgroundTint="@color/coffee_primary"
+                android:textColor="@color/white"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnCancelarEdicionInsumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancelar_edicion"
+                android:visibility="gone"
+                android:minHeight="40dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_insumos_actuales"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/listaInsumos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

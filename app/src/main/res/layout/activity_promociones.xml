@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_coffee">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarPromos"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/coffee_primary"
+        app:title="@string/title_promociones"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back_arrow" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/promotions_list"
+            android:textSize="15sp"
+            android:textColor="@color/coffee_text_secondary" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

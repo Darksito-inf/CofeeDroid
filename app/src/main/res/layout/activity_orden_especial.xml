@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_coffee">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarOrden"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/coffee_primary"
+        app:title="@string/title_orden_especial"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back_arrow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cafe"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_tipo_pedido"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="4dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTipoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <RadioButton
+                    android:id="@+id/radioLlevar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_llevar"
+                    android:checked="true"
+                    android:layout_marginEnd="24dp" />
+
+                <RadioButton
+                    android:id="@+id/radioMesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_mesa" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinnerMesa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnGuardarOrden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_guardar_orden"
+                android:backgroundTint="@color/coffee_secondary"
+                android:textColor="@color/white"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnCancelarEdicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancelar_edicion"
+                android:visibility="gone"
+                android:minHeight="40dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_ordenes_actuales"
+                android:textStyle="bold"
+                android:textColor="@color/coffee_primary"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/listaOrdenes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
